@@ -1,3 +1,24 @@
+# Запуск
+
+```bash
+docker compose up -d
+```
+
+При первом запуске загружаются 10 000 записей
+
+**Подключение к PostgreSQL:**
+- Host: `localhost`
+- Port: `5433`
+- Database: `lab_db`
+- User: `postgres`
+- Password: `postgres`
+
+**Проверка:**
+```sql
+SELECT COUNT(*) FROM fact_sales;
+```
+
+
 # BigDataSnowflake
 Анализ больших данных - лабораторная работа №1 - нормализация данных в снежинку
 
